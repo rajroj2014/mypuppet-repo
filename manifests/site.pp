@@ -5,6 +5,6 @@ node default {
     owner   => 'root',
   }
 }
-node 'pslave' {
+node /^ps/ {
   include role::slave_node
 }
