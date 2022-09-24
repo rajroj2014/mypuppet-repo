@@ -1,5 +1,5 @@
 class profile::docker {
-  include dockeragent
-  dockeragent::node { 'web_puppet': }
-  dockeragent::node { 'db_puppet': }
+  include docker
+  docker::node { 'web_puppet': }
+  docker::node { 'db_puppet': }
 }
