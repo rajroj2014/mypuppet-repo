@@ -6,6 +6,6 @@ node default {
   }
 }
 
-node pslave {
+node 'pslave' {
     include role::node01 
 }
