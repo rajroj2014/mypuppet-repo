@@ -1,3 +1,3 @@
-class role::node01 {
+class role::slave_server {
   include profile::base
 }
