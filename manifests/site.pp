@@ -1,11 +1,10 @@
 node default {
-  file { '/root/READMEE':
+  file { '/root/README':
     ensure => file,
-    content => 'This is a default readme',
+    content => 'This is a readme',
     owner   => 'root',
   }
 }
-
 node 'pslave' {
-    include role::pslave
+  include role::master_server
 }
