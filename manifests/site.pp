@@ -7,5 +7,5 @@ node default {
 }
 
 node 'pslave' {
-    include role::node01 
+    include role::slave_server
 }
