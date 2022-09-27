@@ -1,7 +1,7 @@
 class profile::base {
   file { '/root/README0':
     ensure => file,
-    content => 'This is a role readme \n',
+    content => 'This is a role readme',
     owner   => 'root',
   }
   package { 'screen':
