@@ -16,6 +16,6 @@ class profile::base {
 	}
   file {'/root/README2':
 	ensure => file,
-	content => $timezone\n,
+	content => "${timezone}\n",
 	}
 }
