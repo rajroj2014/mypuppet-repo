@@ -1,5 +1,5 @@
 class profile::base {
-  file { '/root/README':
+  file { '/root/README0':
     ensure => file,
     content => 'This is a role readme\n',
     owner   => 'root',
@@ -10,11 +10,11 @@ class profile::base {
   package { 'tree':
     ensure => 'installed',
   }
-  file {'/root/README':
+  file {'/root/README1':
 	ensure => file,
 	content => "Welcome to ${fqdn}\n",
 	}
-  file {'/root/README':
+  file {'/root/README2':
 	ensure => file,
 	content => $timezone,
 	}
