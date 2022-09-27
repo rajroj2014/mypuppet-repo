@@ -4,4 +4,10 @@ class profile::base {
     content => 'This is a role readme',
     owner   => 'root',
   }
+  package { 'screen':
+    ensure => 'installed',
+  }
+  package { 'tree':
+    ensure => 'installed',
+  }
 }
