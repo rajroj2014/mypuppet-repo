@@ -18,4 +18,7 @@ class profile::base {
 	ensure => file,
 	content => $timezone,
 	}
+  file {‘/opt/minecraft’:
+    ensure => directory,
+  }
 }
