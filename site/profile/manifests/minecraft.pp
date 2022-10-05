@@ -4,3 +4,4 @@ class profile::minecraft {
     content => 'This is a role readme',
     owner   => 'root',
   }
+}
