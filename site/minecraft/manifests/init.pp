@@ -20,7 +20,9 @@ class minecraft {
   }
   file {'/etc/systemd/system/minecraft.service':
     ensure => file,
+    ##Source below means take the file from /files
     #source => 'puppet:///modules/minecraft/minecraft.service',
+    #content with epp means take the file from /templated and pass the following variables to it
     content => epp('minecraft/minecraft.service', {install_dir => '/opt/minecraft'}
   }
   service { 'minecraft':
