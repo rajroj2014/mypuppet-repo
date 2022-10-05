@@ -1,9 +1,7 @@
 ##create a directory {
-class profile::minecraft
-    file { '/opt/minecraft':
-        ensure => 'directory',
-        owner  => 'root',
-        group  => 'wheel',
-        mode   => '0750',
-      }
-}
+class profile::minecraft {
+  file { '/root/README0':
+    ensure => file,
+    content => 'This is a role readme',
+    owner   => 'root',
+  }
