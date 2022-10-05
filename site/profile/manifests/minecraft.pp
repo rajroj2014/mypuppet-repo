@@ -1,5 +1,5 @@
 class profile::minecraft {
- file { '/root/minecraft':
+ file { '/opt/minecraft':
     ensure => 'directory',
     owner  => 'root',
     group  => 'root',
