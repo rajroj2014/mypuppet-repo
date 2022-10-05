@@ -1,4 +1,3 @@
-##create a directory {
 class profile::minecraft {
   file { '/root/README2222':
     ensure => file,
